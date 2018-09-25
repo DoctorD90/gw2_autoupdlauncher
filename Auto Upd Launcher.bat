@@ -47,14 +47,18 @@ REM ###### DO NOT EDIT BELOW THIS LINE ######
 REM ###### DO NOT EDIT BELOW THIS LINE ######
 REM ###### DO NOT EDIT BELOW THIS LINE ######
 
+CD %ARCpath:~0,2%
 CD %ARCpath%
 IF %ARCstart% == 1 powershell -executionpolicy bypass -File %ARCexe%
 
+CD %TSpath:~0,2%
 CD %TSpath%
 IF %TSstart% == 1 start %TSexe%
 
+CD %GW2path:~0,2%
 CD %GW2path%
 IF %GW2start% == 1 start %GW2exe% -maploadinfo
 
+CD %TACOpath:~0,2%
 CD %TACOpath%
 IF %TACOstart% == 1 start %TACOexe%
